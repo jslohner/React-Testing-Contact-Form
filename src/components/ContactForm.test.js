@@ -8,7 +8,7 @@ test('contact form renders', () => {
 })
 
 test('user can fill out and submit form as intended', async () => {
-	const { getByDisplayValue, getByLabelText, getByPlaceholderText, getByTestId } = render(<ContactForm />);
+	const { getByLabelText, getByTestId } = render(<ContactForm />);
 
 	const firstNameInput = getByLabelText(/first name/i);
 	const lastNameInput = getByLabelText(/last name/i);
@@ -32,5 +32,4 @@ test('user can fill out and submit form as intended', async () => {
 	await waitFor(() => {
 		expect(getByTestId('formData'))
 	})
-
 })
