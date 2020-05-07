@@ -33,9 +33,4 @@ test('user can fill out and submit form as intended', async () => {
 		expect(getByTestId('formData'))
 	})
 
-
-
-	// const test = getByDisplayValue('Jus');
-	// expect(test).toBeInTheDocument();
-
 })
